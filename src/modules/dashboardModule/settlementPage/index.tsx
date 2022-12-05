@@ -18,19 +18,16 @@ const SettlementPage = () => {
                 <Para>$0.00</Para>
                 <CustomTextFieldPrimary
                     label={'Amount'}
-                    keyboardType='numeric'
-                />
+                    keyboardType='numeric' error={''} touched={false} />
                 <CustomDevider />
                 <CustomTextFieldPrimary
                     label={'Hand over to'}
-                    placeholder="Enter username"
-                />
+                    placeholder="Enter username" error={''} touched={false} />
                 <CustomTextFieldPrimary
                     label={'Notes'}
                     placeholder="Enter notes"
                     multiline={true}
-                    numberOfLines={4}
-                />
+                    numberOfLines={4} error={''} touched={false} />
                 <CustomPrimaryButton name={'SETTLE'} />
             </ScrollView>
         </View>

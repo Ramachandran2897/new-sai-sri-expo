@@ -29,7 +29,9 @@ const DashboardIndex = (props) => {
     const num = [
         { id: 1, title: 'Bill', desc: 'Create New Invoice', footerText: 'Create bill', onPress: () => props.navigation.navigate('createInvoice') },
         { id: 2, title: '0', desc: 'Cash to handover', footerText: 'Settle amount', onPress: () => props.navigation.navigate('settlement') },
-        { id: 3, title: 'Un payed bills ', desc: 'View invoice', footerText: 'Colect Payment', onPress: () => props.navigation.navigate('collectPayment') }
+        { id: 3, title: 'Un payed bills ', desc: 'View invoice', footerText: 'Colect Payment', onPress: () => props.navigation.navigate('collectPayment') },
+        { id: 4, title: 'Unload ', desc: 'unload remaining products', footerText: 'Unload Products', onPress: () => props.navigation.navigate('unloadProduct') },
+        { id: 5, title: 'New Shop ', desc: 'Create new shop', footerText: 'Add new shop', onPress: () => props.navigation.navigate('newShop') },
     ]
     return (
         <View style={globalStyles.container}>
@@ -40,7 +42,7 @@ const DashboardIndex = (props) => {
                     </View>
                 )}
             </View>
-            <CustomPrimaryTable data={DATA} />
+            <CustomPrimaryTable data={DATA} searchbar={false} />
         </View>
     )
 }

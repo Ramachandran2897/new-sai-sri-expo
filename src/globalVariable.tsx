@@ -9,6 +9,7 @@ export default EStyleSheet.build({
   $danger: '#FF0000',
   $white: '#ffffff',
   $grey: '#808080',
+  $greySecondary: '#D3D3D3',
   $fontSmallParagraph: 11,
   $fontParagraph: 14,
   $fontSmallHeading: 18,

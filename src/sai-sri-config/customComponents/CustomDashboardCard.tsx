@@ -32,7 +32,7 @@ export default memo(CustomDashboardCard)
 
 const styles = EStyleSheet.create({
     container: {
-        backgroundColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`, margin: 10,
+        backgroundColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`, margin: 10, maxWidth: 150
     },
     desc: {
         fontSize: '$fontSmallParagraph',
@@ -48,7 +48,7 @@ const styles = EStyleSheet.create({
         backgroundColor: '$grey',
         opacity: 0.5, flexDirection: 'row',
         justifyContent: 'center', alignItems: 'center',
-        paddingVertical: 5
+        paddingVertical: 5, padding: 10
     },
     footerText: { fontWeight: 'bold', color: '$white' }
 }
